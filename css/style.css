@@ -1,12 +1,25 @@
-* {
-    margin: 0;
-    padding: 0;
+@import url("font.css");
+p {
+  font-family: Montserrat;
+}  
+
+span {
+  font-family: Montserrat;
 }
 
-   
+h2, h3, h1 {
+  font-family: Raleway;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
 
 .nav_title {
-    font-family: Raleway;
 font-size: 36px;
 line-height: 1.2;
 font-weight: 500;
@@ -14,7 +27,6 @@ color: #ffffff;
 }
 
 .nav_title2 {
-    font-family: Raleway;
 font-size: 52px;
 line-height: 1.2;
 font-weight: 800;
@@ -22,7 +34,6 @@ color: #ffffff;
 }
 
 .nav_par {
-    font-family: Montserrat;
     font-size: 16px;
     line-height: 24px;
     font-weight: 300;
@@ -38,11 +49,11 @@ color: #ffffff;
 
 .top {
     background-image: url(../img/bg_photo.png);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    min-height: 700px;
+    
     background-color: rgba(17,17,17,0.7);
-    padding: 10px 100px;
+    padding: 10px 15%;
 }
 
 .logo-link {
@@ -52,7 +63,6 @@ color: #ffffff;
     width: 185px;
     text-decoration: none;
     color: #fff;
-    margin-left: 100px;
   }
   
   .logo-link:hover .logo-icon {
@@ -72,7 +82,6 @@ color: #ffffff;
   }
   
   .logo-txt {
-    font-family: Raleway;
     font-size: 34px;
     line-height: 1.2;
     font-weight: 400;
@@ -85,8 +94,8 @@ color: #ffffff;
   }
 
   .nav {
-      margin: 10px 0 0 200px;
-      display: flex;
+    margin: 10px 0 0 16%;
+    display: flex;
   }
 
 .nav_item {
@@ -125,6 +134,11 @@ color: #ffffff;
     padding: 15px 25px;
   }
 
+  .get:hover {
+    background: #c7b299;
+    color: #ffffff;
+  }
+
 .search-icon-form {
     width: 27px;
     height: 28px;
@@ -135,10 +149,11 @@ color: #ffffff;
     display: block;
     width: 100%;
     height: 100%;
-    background-image: url(../img/icon_search.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
     background-color: transparent;
+  }
+
+  .search-icon-form__svg {
+    fill: #fff;
   }
 
   .search-icon-form__input {
@@ -163,6 +178,14 @@ color: #ffffff;
     min-height: 20px;
     transition: width 1s ease;
     border: 2px solid #fff;
+  }
+
+  .search-icon-form__label:hover .search-icon-form__svg {
+    fill:#c7b299;
+  }
+  
+  .search-icon-form__label:active .search-icon-form__svg {
+    fill: coral;
   }
 
 .slider {
@@ -245,19 +268,17 @@ color: #ffffff;
   }
 
 .box {
-    margin: 10px 100px 0 100px;
-    min-height: 250px; 
+    min-height: 300px; 
     background-image: url(../img/browser_center.png),
     url(../img/browser_left.png), 
     url(../img/browser_right.png);
     background-size: 60%, 50%, 50%;
     background-repeat: no-repeat;
-    background-position: center, left, right;
+    background-position: bottom center, bottom left, bottom right;
 }
 
 .realization_title {
     text-align: center;
-    font-family: Raleway;
     font-size: 30px;
     line-height: 1.2;
     font-weight: 600;
@@ -265,7 +286,6 @@ color: #ffffff;
 }
 
 .realization_par {
-    font-family: Montserrat;
     font-size: 16px;
     line-height: 28px;
     font-weight: 300;
@@ -276,13 +296,14 @@ color: #ffffff;
 }
 
 .realization {
-    padding: 80px 150px 0 150px;
+    padding: 80px 15% 0 15%;
 }
 
 .project_card {
     display: flex;
     justify-content: center;
     padding-bottom: 80px;
+    text-align: center;
 }
 
 .card_icone {
@@ -306,12 +327,14 @@ color: #ffffff;
 
 .card_icone:hover {
   fill: #c7b299;
+}
+
+.card_icone:hover .card_title {
   color: #c7b299;
 }
 
 .card_title {
     text-align: center;
-    font-family: Raleway;
     font-size: 22px;
     line-height: 1.2;
     font-weight: 600;
@@ -320,15 +343,10 @@ color: #ffffff;
 
 .card_text {
     text-align: center;
-    font-family: Montserrat;
     font-size: 14px;
     line-height: 24px;
     font-weight: 300;
     color: #8c8c8c;
-}
-
-.card_img {
-    margin-left: 110px;
 }
 
 aside {
@@ -340,7 +358,7 @@ aside {
 .multi {
     display: flex;
     justify-content: space-around;
-    padding: 0 100px;
+    padding: 0 15%;
 }
 
 .multi_title_list {
@@ -348,7 +366,6 @@ aside {
 }
 
 .multi_par {
-    font-family: Montserrat;
     font-size: 18px;
     line-height: 1.2;
     font-weight: 300;
@@ -356,7 +373,6 @@ aside {
 }
 
 .multi_title {
-    font-family: Raleway;
     font-size: 28px;
     line-height: 1.2;
     font-weight: 400;
@@ -376,12 +392,13 @@ aside {
 }
 
 .last {
-    padding: 80px 200px;   
+    padding: 80px 15%;   
     
 }
 
 .project_item {
     display: flex;
+    justify-content: center;
     list-style: none;
 }
 
@@ -392,7 +409,6 @@ aside {
 }
 
 .last_title_our {
-    font-family: Raleway;
     font-size: 30px;
     line-height: 1.2;
     font-weight: 600;
@@ -401,7 +417,6 @@ aside {
 }
 
 .last_par_our {
-    font-family: Montserrat;
     font-size: 16px;
     line-height: 28px;
     font-weight: 300;
@@ -461,12 +476,12 @@ aside {
     height: 26px;
     background-image: url(../img/link.svg);
     position: absolute;
-    top: -5%;
+    top: 35%;
     left: 35%;
     right: 0;
     bottom: 0;
+    z-index: 1;
   }
-
   
   .last_list:hover:after {
     content: "";
@@ -480,8 +495,27 @@ aside {
     bottom: 0;
   }
 
+  .project_list {
+    display: block;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #8c8c8c;
+    padding: 4px 10px;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    margin-right: 10px;
+  }
+
+  .project_list:hover {
+    background-color: #998675;
+    color: #ffffff;
+    border: 1px solid #998675;
+  }
+
   .project-item-title {
-    font-family: Raleway;
     font-size: 20px;
     line-height: 1.2;
     font-weight: 500;
@@ -489,22 +523,19 @@ aside {
   }
 
   .project-item-txt {
-    font-family: Montserrat;
     font-size: 14px;
     line-height: 20px;
     font-weight: 300;
     color: #d1d1d1;
   }
 
-
   .load {
-      align-items: center;
+    margin-left: 46%;
   }
-
 
   .video {
       background-image: url(../img/video.png);
-      background-size: 100%;
+      background-size: cover;
       min-height: 475px;
       background-repeat: no-repeat;
       background-color: rgba(17,17,17,0.7);
@@ -518,7 +549,6 @@ aside {
   }
 
   .video_title {
-    font-family: Raleway;
     font-size: 30px;
     line-height: 1.2;
     font-weight: 500;
@@ -526,7 +556,6 @@ aside {
   }
 
   .video_par {
-    font-family: Montserrat;
     font-size: 16px;
     line-height: 28px;
     font-weight: 300;
@@ -535,15 +564,26 @@ aside {
   }
 
   .video_time {
-    font-family: Montserrat;
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
     color: #c7b299; 
   }
 
+  .video_svg {
+    fill: #ffffff;
+  }
+
+  .video_svg:hover {
+    fill: #c7b299;
+  }
+
+  .video_svg:active {
+    fill: pink;
+  }
+
   .mobile {
-      padding: 70px 200px 0 160px;
+      padding: 70px 15% 0 15%;
       display: flex;
   }
 
@@ -552,7 +592,6 @@ aside {
   }
 
   .iphone_title {
-    font-family: Raleway;
     font-size: 30px;
     line-height: 1.2;
     font-weight: 600;
@@ -560,7 +599,6 @@ aside {
   }
 
   .iphone_par {
-    font-family: Montserrat;
     font-size: 16px;
     line-height: 28px;
     font-weight: 300;
@@ -604,8 +642,16 @@ aside {
     text-align: center;
   }
 
+  .numeral_list::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 30px;
+    height: 2px;
+    background-color:#c7b299;
+  }
+
   .num_title {
-    font-family: Montserrat;
     font-size: 48px;
     line-height: 36px;
     font-weight: 200;
@@ -614,12 +660,12 @@ aside {
   }
 
   .num_par {
-    font-family: Montserrat;
     font-size: 14px;
     line-height: 20px;
     font-weight: 300;
     text-transform: uppercase;
     color: #c7b299;
+    margin-bottom: 10px;
   }
 
   .num_img {
@@ -627,20 +673,270 @@ aside {
   }
 
   .recent {
-    margin: 60px 200px;
+    margin: 60px 15%;
   }
 
   .recent_item {
     display: flex;
     justify-content: center;
+   
     list-style: none;
+    margin-top: 20px;
+  }
+
+  .recent_list {
+    margin-left: 15px;
+    position: relative;
+  }
+
+  .recent_img {
+    display: block;
+  }
+ 
+  .recent_block {
+    padding: 10px 10px;
+    box-sizing: border-box;
+    width: 290px;
+  }
+
+  .recent_title {
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #555555;
+  }
+
+  .recent_par {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: #8c8c8c;
+  }
+
+  .recent-list-item-article-date-wrp {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    left: 20px;
+    top: 20px;
+  }
+
+  .recent-list-item-article-date-wrp-day {
+    background-color: #363636;
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #fff;
+    padding: 8px 8px 10px 8px;
+    border-radius: 3px 3px 0px 0px;
+  }
+
+  .recent-list-item-article-date-wrp-month {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 0px 0px 3px 3px;
+    background-color: #252525;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.recent_list:hover .recent-list-item-article-date-wrp-month {
+  background-color:#a48d72;
+}
+
+.recent_list:hover .recent-list-item-article-date-wrp-day {
+  background-color:#c7b299;
+}
+
+  .recent_list:hover .recent_title {
+    color: #c7b299;
+  }
+
+  .recent_list:hover .recent_img {
+    filter: brightness(40%);
+  }
+  
+  .recent_list:hover .recent_par {
+    color: #ffffff;
+  }
+
+  .recent_list:hover .recent_block {
+    background-color: #362f2d;
+  }
+
+  .recent_read {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #c7b299;
+    text-decoration: none;
+    position: relative;  
+  }
+
+  .recent_read::after {
+    content: "";
+    border: 6px solid transparent;
+    border-bottom: 6px solid #c7b299;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 4px;
+    right: -19px;
   }
 
   .ad {
     background-image: url(../img/bg_logo.jpg);
-    background-size: 100%;
-    min-height: 300px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: rgba(17,17,17,0.7);
-    padding: 50px 180px 0 180px;
+    padding: 50px 15% 0 15%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .ad_img {
+    width: 20%;
+    padding: 10px 2%;
+  }
+
+  .footer_top {
+    display: flex;
+    background-color: #191919;
+    padding: 20px 15%;
+  }
+
+  .col {
+    width: 25%;
+    margin-left: 3%;
+  }
+
+  .footer_top_link {
+    color: #00bff3;
+  }
+
+  .footer_top_title {
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  .footer_time_data {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #363636;
+  }
+
+  .footer_par {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #555555;  
+  }
+
+  .footer_top_imgs {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-item {
+    padding-bottom: 10px;
+    margin-bottom: 10px;  
+    position: relative;
+  }
+
+  .footer-item:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #252525;
+    top: 100%;
+    left: 0;
+  }
+
+  .footer-item:hover .footer_par {
+    color: #c7b299; 
+  }
+
+  .footer-item:hover .footer_time_data {
+    color: #ffffff; 
+  }
+
+  .footer_img_d {
+    width: 46%;
+    padding: 2px 2px;
+  }
+
+  .footer_down {
+    padding: 10px 150px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #111111;
+  }
+
+  .footer_d_text {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #555555;
+  }
+
+  .footer_d_text2 {
+    color: #959595;  
+  }
+
+  .footer_d_text3:hover {
+    color: #c7b299; 
+  }
+
+  .checkbox_mob {
+    display: none;
+  }
+
+  @media (max-width: 576px) {
+
+    .slider, .footer_top, .search-icon-form, .get, .project_item, .mob_none, .pagination, .multi, .realization_title, .realization_par, .numeral, .box {
+      display: none;
+    }
+
+    .project_card {
+      flex-wrap: wrap;
+    }
+
+    .card_icone {
+      width: 45%;
+      margin-bottom: 20px;
+    }
+    
+    .realization {
+      padding: 5% 5%;
+  }
+  .project_card {
+    padding: 0;
+  }
+
+  .last {
+    padding: 5% 5%;
+  }
+
+  .last_list {
+    width: 45%;
+    margin: 2% 2%;
+  }
+
+  .recent_item {
+    flex-wrap: wrap;
+  }
+
+  .recent_list {
+    margin-bottom: 3%;
+    margin-left: 0;
+  }
+
   }
